@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    char hierarchy ; //char 은 한 문자만 받음 ex(A,B,C,D, 가 ,ㅏ, 나 ,등)
+    int day;	//int 는 정수형만 받음 2147483647까지만 받을 수 있음 그 이상 숫자가 커지면 이상한 숫자가 나옴
+    float money;	//float은 5.1f같이 앞에 자리수 5개 소수점 밑 자리 수 정할 수 있음
+    char name[30]; //char []에서 대괄호의 역활은 null의 위치임 null이 나오면 문자열이 끝났다고 판단함?
+    printf("여행경비를 입력하세요:");
+    scanf("%f",&money);
+    printf("%f\n",money);  //printf 에서 첫번째 열은 출력 형식 , 두번째는 검사할 주소 printf(출력형식 문자열, 값1, 값2...) 하지만 인자를 몇 개 받을지 모르기 때문에 이렇게 한다
+    printf("이름를 입력하세요:");
+    scanf("%s",name);
+    printf("%s\n",name);
+    //문자열은 &안 붙임 scanf에서 &는 데이터의 주소
+    //scanf 는 입력받는 함수? 
+    
+    printf("여행일수를 입력하세요:");
+    scanf("%d",&day);
+    printf("%10d\n",day);
+    printf("여행등급을 입력하세요(A,B,C중 한 글자):");
+    //prinf 는 화면출력 f(서식)  
+    
+    scanf(" %c", &hierarchy);
+    //scanf 는 입력 f(서식)
+        //문자열(연속된 문자 2글자 이상)는 %s(string)
+        //왜 문자열은 &을 사용하지 않을까?
+        //문자열 이름 자체가 데이터들의 집합의 이름이여서 주소가 필요 없다 
+    //%c 앞에 공백주는 이유:위의 엔터키를 없애기 위해서 = 위에서 scanf 에서 입력한 
+    //엔터키가 문자에 들어가서
+    printf("%c\n",hierarchy);
+    return 0;
+}
