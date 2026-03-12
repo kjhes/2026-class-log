@@ -1,0 +1,19 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num ;
+    printf("숫자를 입력하세요:");
+    scanf("%d",&num);
+    
+    if (num % 2==1) {printf("%d홀수이다\n",num);
+    printf("2로 나눈 나머지가 1");}
+    else if(num %2==0) {printf("%d는 짝수다\n ",num);
+    printf("2로 나눈 나머지가 0");}
+    else printf("%d는 정수가 아니다",num);
+                                     
+    //printf("%d",num);
+    
+    return 0;
+}
+
