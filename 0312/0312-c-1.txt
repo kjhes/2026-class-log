@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int score;
+    
+    
+    while (1){          //반복 0 == false ,1 == true
+    scanf("%d",&score);
+    if (score == 10){
+        printf("정답.\n");
+        break;}
+    else if (score > 10 )
+        printf("너무 높아요.\n");
+    else if (score < 10 )
+        printf("너무 낮아요\n");
+    else
+        printf("오류");
+    }
+    return 0;
+}

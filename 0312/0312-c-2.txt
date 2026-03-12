@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    char blood;
+    printf("혈액형이 무엇인가요?(A,B,O)");
+    scanf("%c",&blood);
+    
+    //조건문 switch ~case: 조건문,반복문 등은 세미콜론;을 붙이지 않는다 왜냐하면 ;은 문장에 끝에 붙이기 때문에
+    switch(blood)
+    {
+        case 'A' :printf("A\n");
+        case 'a' :printf("A\n");
+            break;
+        case 'B':printf("B\n");
+        case 'b':printf("B\n");
+            break;
+        case 'O':printf("O\n");
+        case 'o':printf("O\n");
+            break;
+        default:printf("error\n");
+    //c언어 에서 char을 사용할때는 ''를 사용한다
+        
+    //switch case 조건문에서는 break를 넣지 않으면 자동을 나가지를 않아서 case 1 2 3 default 다 나온다
+    //단 default는 break를 안 달아도 알아서 종류한다. +@ switch case 는 어짜피 case 별로 찾아가기 때문에 중괄호를
+    //쓸필요가 없다
+    }
+    
+    return 0;
+} 
